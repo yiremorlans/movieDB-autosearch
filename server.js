@@ -40,6 +40,7 @@ app.get('/search', async (req, res) => {
             }
         ]).toArray()
         res.send(result)
+        console.log('Search is working')
     }catch (error) {
         res.status(500).send({message: error.message})
     }
